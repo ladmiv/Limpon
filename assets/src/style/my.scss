@@ -1,0 +1,141 @@
+body{
+  min-width: 320px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  color: $lightSlateGray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  max-width: 600px;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+  color: #192b59;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  color: $signalBlue;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+h2 span {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: $navyCrayola;
+  text-transform: uppercase;
+}
+
+.btn-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
+  & svg {
+    width: 35px;
+    height: 35px;
+    fill: $signalBlue;
+  }
+}
+
+.title-40 {
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.1px;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+
+  & span {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 3.5px;
+  }
+}
+
+.setting-icon {
+    position: relative;
+    left: -20px;
+    top: 0;
+    display: block;
+    width: 116px;
+    height: 98px;
+    background-image: url(../img/software/icon.png);
+    background-repeat: no-repeat;
+  }
+
+.btn {
+  padding: 20px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .2s;
+
+  &-primary {
+    color: #fff;
+    background-color: $navyCrayola;
+    border: 1px solid $navyCrayola;
+
+    &:hover {
+      color: $navyCrayola;
+      background-color: #fff;
+    }
+  }
+
+  &-secondary {
+    color: #7e8bae;
+    background-color: $periwinkleCraiola;
+    border: 1px solid $periwinkleCraiola;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &-group a + a {
+    margin-left: 15px;
+  }
+
+  &-info {
+    padding: 20px 60px;
+    color: #8085b1;
+    background-color: transparent;
+    border: 1px solid #dce1e5;
+
+    &:hover {
+      background-color: #dce1e5;
+    }
+  }
+}

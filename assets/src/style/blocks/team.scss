@@ -1,0 +1,164 @@
+.team {
+  padding-top: 118px;
+  padding-bottom: 115px;
+  text-align: center;
+  background-image: url(../img/team/bg.png);
+  background-repeat: no-repeat;
+
+  @media (max-width: 1110px) {
+    padding-bottom: 0;
+  }
+
+  &-h2 {
+    margin-bottom: 51px;
+    color: #fff;
+
+    & span {
+      color: #85c8ff;
+    }
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+
+    @media (max-width: 1110px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      flex-basis: 26%;
+      position: relative;
+      padding: 190px 31px 45px;
+      background-color: #fff;
+      box-shadow: 0 5px 6px 0 rgba(180,181,181,.2);
+
+      @media (max-width: 1110px) {
+        flex-basis: 50%;
+        margin-bottom: 150px;
+      }
+
+      @media (max-width: 610px) {
+        flex-basis: 350px;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: -85px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+    }
+
+    &__position {
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #1a88e1;
+    }
+
+    &__name {
+      margin-top: 5px;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      color: $signalBlue;
+    }
+
+  }
+
+  &-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    border: none;
+    transition: all .2s;
+
+    &:hover {
+      background-color: #1a88e1;
+
+      & .team-btn__span {
+        background-position: 0 -22px;
+      }
+    }
+
+    &__span {
+      align-self: center;
+      position: relative;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+      background-color: transparent;
+      background-image: url(../img/team/btn-team.png);
+      background-position: 0 -2px;
+      background-repeat: no-repeat;
+    }
+
+    &__fb {
+
+
+      & .team-btn__span {
+        background-position: -18px -1px;
+      }
+
+      &:hover .team-btn__span {
+        background-position: -18px -21px;
+      }
+    }
+
+     &__tw {
+
+
+      & .team-btn__span {
+        background-position: -36px -1px;
+      }
+
+      &:hover .team-btn__span {
+        background-position: -36px -21px;
+      }
+    }
+
+     &__be {
+
+
+      & .team-btn__span {
+        background-position: -57px -1px;
+      }
+
+      &:hover .team-btn__span {
+        background-position: -57px -21px;
+      }
+    }
+
+     &__web {
+
+
+      & .team-btn__span {
+        background-position: -79px -1px;
+      }
+
+      &:hover .team-btn__span {
+        background-position: -79px -21px;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}

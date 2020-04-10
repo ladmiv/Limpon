@@ -1,0 +1,21 @@
+@import "../../../node_modules/normalize.css/normalize";
+
+// Подключение своих SCSS файлов
+@import "variables";
+@import "my";
+@import "blocks/header";
+@import "blocks/company";
+@import "blocks/features";
+@import "blocks/subscribe";
+@import "blocks/software";
+@import "blocks/stat";
+@import "blocks/app";
+@import "blocks/analytics";
+@import "blocks/control";
+@import "blocks/screen";
+@import "blocks/clients";
+@import "blocks/plan";
+@import "blocks/team";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/nav-modal";

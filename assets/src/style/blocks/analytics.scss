@@ -1,0 +1,55 @@
+.analytics {
+  padding-top: 118px;
+  padding-bottom: 138px;
+  background-image: url(../img/analytics/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1010px) {
+    background-image: none;
+    background-color: #edf6ff;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (max-width: 1010px) {
+      justify-content: center;
+    }
+  }
+
+  &-img {
+    @media (max-width: 1010px) {
+      display: none;
+    }
+  }
+
+  &-inner {
+    position: relative;
+    flex-basis: 54.5%;
+
+    @media (max-width: 1010px) {
+      flex-basis: 80%;
+    }
+  }
+
+  &-h2 {
+    margin-bottom: 26px;
+    margin-top: 10px;
+  }
+
+  &-text {
+    margin-bottom: 50px;
+  }
+
+  &-btn {
+    @media (max-width: 340px) {
+      display: block;
+      margin: 0 auto;
+      padding: 15px 25px;
+      text-align: center;
+    }
+  }
+}

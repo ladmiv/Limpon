@@ -1,0 +1,104 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $signalBlue;
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+  &-text {
+    margin: 0;
+    color: #b6bae0;
+
+    @media (max-width: 550px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
+
+    &__link {
+      color: $navyCrayola;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.social {
+  flex-basis: 172px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  line-height: 0;
+
+  @media (max-width: 550px) {
+    flex-basis: auto;
+    width: 172px;
+  }
+
+  &-item {
+
+    &__link {
+      display: block;
+      height: 17px;
+      background-image: url(../img/footer/sprite.png);
+      background-repeat: no-repeat;
+    }
+
+    &__fb {
+      width: 12px;
+      background-position: 0 0;
+    }
+
+    &__tw {
+      width: 15px;
+      background-position: -34px 0;
+    }
+
+    &__be {
+      width: 18px;
+      background-position: -75px 0;
+    }
+
+    &__p {
+      width: 18px;
+      background-position: -116px 0;
+    }
+
+    &__f {
+      width: 15px;
+      background-position: -157px 0;
+    }
+
+    &:hover &__fb {
+      background-position: 0 -23px;
+    }
+
+    &:hover &__tw {
+      background-position: -34px -23px;
+    }
+
+    &:hover &__be {
+      background-position: -75px -23px;
+    }
+
+    &:hover &__p {
+      background-position: -116px -23px;
+    }
+
+    &:hover &__f {
+      background-position: -157px -23px;
+    }
+  }
+}
